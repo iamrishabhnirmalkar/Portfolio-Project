@@ -18,10 +18,10 @@
 /* CSS variables with their corresponding color */
 
 :root {
-  --bg-color: #1f242d;
-  --secound-bg-color: #323946;
+  --bg-color: #000000;
+  --secound-bg-color: #7e7e7e;
   --text-color: #fff;
-  --main-color: #0ef;
+  --main-color: rgb(253, 0, 241);
 }
 
 /* Basic Degine */
@@ -250,7 +250,7 @@ span {
 .portfolio_box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem --bg-color;
+  box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
   display: flex;
 }
@@ -263,6 +263,11 @@ span {
 .portfolio_box:hover img {
   transform: scale(1.1);
 }
+
+.portfolio_box:hover .portfolio_layer {
+  transform: translateY(0);
+}
+
 .portfolio_layer {
   position: absolute;
   bottom: 0;
@@ -272,15 +277,12 @@ span {
   background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
   padding: 0 4rem;
   transform: translateY(100%);
   transition: 0.5s ease;
-}
-
-.portfolio_box:hover .portfolio_box {
-  transform: translateY(0);
 }
 
 .portfolio_layer h4 {
@@ -306,6 +308,7 @@ span {
   font-size: 2rem;
   color: var(--main-color);
 }
+
 /* Contact Degine */
 
 .contact h2 {
@@ -327,7 +330,15 @@ textarea {
   margin: 0.7rem 0;
   border-radius: 0.8rem;
   color: var(--text-color);
+  cursor: pointer;
   background: var(--secound-bg-color);
+}
+.input_box input,
+textarea::placeholder {
+  color: var(--text-color);
+}
+.input_box input::placeholder {
+  color: var(--text-color);
 }
 
 .input_box input {
