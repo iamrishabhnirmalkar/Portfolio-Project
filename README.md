@@ -1,5 +1,7 @@
 # Welcome to My Portfolio!
 
+link of Profolio (https://rishabhnirmalkar.netlify.app)
+
 This is a simple portfolio showcasing my web development projects. I have created this portfolio using HTML, CSS, and JavaScript to demonstrate my skills and showcase the work I have done.
 
 In this portfolio, you will find a collection of my projects, including websites I have developed, interactive web applications, and other web-related work. Each project is accompanied by a description that highlights its purpose, features, and technologies used.
